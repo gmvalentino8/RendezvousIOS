@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A5D6655177BB19AE771BF96 /* Pods_RendezvousUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2247336B55F699F7CDC9D78E /* Pods_RendezvousUITests.framework */; };
+		76549FB7117C36DC95C0C2A5 /* Pods_Rendezvous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FDCCECF75162CFCE7F20E8 /* Pods_Rendezvous.framework */; };
+		A92E6E201FD6F18B00E5630F /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */; };
+		A92E6E221FD6F43200E5630F /* AddFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */; };
+		A92E6E261FD707B100E5630F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E251FD707B100E5630F /* Group.swift */; };
+		A92E6E281FD70A2400E5630F /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E271FD70A2400E5630F /* EventService.swift */; };
+		A92E6E2A1FD70AC000E5630F /* GroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E291FD70AC000E5630F /* GroupsService.swift */; };
+		A92E6E2C1FD70BFD00E5630F /* AddGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */; };
+		A92E6E2E1FD71CFE00E5630F /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */; };
+		A9855DB81FD6EE1D00252ABA /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */; };
+		A98E7D751FB47A6400644B6F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D741FB47A6400644B6F /* Event.swift */; };
+		A98E7D771FB47ADA00644B6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D761FB47ADA00644B6F /* LoginViewController.swift */; };
+		A98E7D791FB47BD800644B6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */; };
+		A9AB4FA71FB4674700BC9FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB4FA61FB4674700BC9FCC /* AppDelegate.swift */; };
+		A9AB4FAE1FB4674700BC9FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AB4FAC1FB4674700BC9FCC /* Main.storyboard */; };
+		A9AB4FB01FB4674700BC9FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AB4FAF1FB4674700BC9FCC /* Assets.xcassets */; };
+		A9AB4FB31FB4674700BC9FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AB4FB11FB4674700BC9FCC /* LaunchScreen.storyboard */; };
+		A9AB4FBE1FB4674700BC9FCC /* RendezvousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB4FBD1FB4674700BC9FCC /* RendezvousTests.swift */; };
+		A9AB4FC91FB4674700BC9FCC /* RendezvousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB4FC81FB4674700BC9FCC /* RendezvousUITests.swift */; };
+		A9DBFE661FBA243000607B3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE651FBA243000607B3B /* User.swift */; };
+		A9DBFE6C1FBA3CBE00607B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE6B1FBA3CBE00607B3B /* HomeViewController.swift */; };
+		A9DBFE6E1FBA3CD000607B3B /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE6D1FBA3CD000607B3B /* EventsViewController.swift */; };
+		A9DBFE701FBA3CDB00607B3B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE6F1FBA3CDB00607B3B /* FriendsViewController.swift */; };
+		A9DBFE721FBA3CEE00607B3B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE711FBA3CEE00607B3B /* ProfileViewController.swift */; };
+		A9DBFE761FBA8DC700607B3B /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE751FBA8DC700607B3B /* FriendsTableViewCell.swift */; };
+		A9DBFE781FBAEEDA00607B3B /* FriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE771FBAEEDA00607B3B /* FriendsService.swift */; };
+		A9DBFE7A1FBAF06A00607B3B /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE791FBAF06A00607B3B /* LoginService.swift */; };
+		A9DBFE7C1FBAF07F00607B3B /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFE7B1FBAF07F00607B3B /* ProfileService.swift */; };
+		C183D7AF49F91B05A236AA12 /* Pods_RendezvousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBF4066CDBD1521EF5A5BB4 /* Pods_RendezvousTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9AB4FBA1FB4674700BC9FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9AB4F9B1FB4674700BC9FCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9AB4FA21FB4674700BC9FCC;
+			remoteInfo = Rendezvous;
+		};
+		A9AB4FC51FB4674700BC9FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9AB4F9B1FB4674700BC9FCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9AB4FA21FB4674700BC9FCC;
+			remoteInfo = Rendezvous;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EC5E3C901DAB44C393457E1 /* Pods-RendezvousUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousUITests/Pods-RendezvousUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FA5E579DCA0CCD3ECA7B2BA /* Pods-Rendezvous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rendezvous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous.release.xcconfig"; sourceTree = "<group>"; };
+		2247336B55F699F7CDC9D78E /* Pods_RendezvousUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RendezvousUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		436ED74E6511AC086E81E98A /* Pods-RendezvousTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests.release.xcconfig"; sourceTree = "<group>"; };
+		45E495FE9499174E284B3B32 /* Pods-Rendezvous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rendezvous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous.debug.xcconfig"; sourceTree = "<group>"; };
+		4C450306C1C13E79D2312829 /* Pods-RendezvousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
+		A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		A92E6E251FD707B100E5630F /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A92E6E271FD70A2400E5630F /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		A92E6E291FD70AC000E5630F /* GroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsService.swift; sourceTree = "<group>"; };
+		A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupTableViewController.swift; sourceTree = "<group>"; };
+		A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		A9855DB61FD6E91400252ABA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		A98E7D741FB47A6400644B6F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A98E7D761FB47ADA00644B6F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9AB4FA31FB4674700BC9FCC /* Rendezvous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rendezvous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AB4FA61FB4674700BC9FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9AB4FAD1FB4674700BC9FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9AB4FAF1FB4674700BC9FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9AB4FB21FB4674700BC9FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9AB4FB41FB4674700BC9FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9AB4FB91FB4674700BC9FCC /* RendezvousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RendezvousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AB4FBD1FB4674700BC9FCC /* RendezvousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezvousTests.swift; sourceTree = "<group>"; };
+		A9AB4FBF1FB4674700BC9FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9AB4FC41FB4674700BC9FCC /* RendezvousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RendezvousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AB4FC81FB4674700BC9FCC /* RendezvousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendezvousUITests.swift; sourceTree = "<group>"; };
+		A9AB4FCA1FB4674700BC9FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DBFE651FBA243000607B3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9DBFE6B1FBA3CBE00607B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A9DBFE6D1FBA3CD000607B3B /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		A9DBFE6F1FBA3CDB00607B3B /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		A9DBFE711FBA3CEE00607B3B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A9DBFE751FBA8DC700607B3B /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		A9DBFE771FBAEEDA00607B3B /* FriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsService.swift; sourceTree = "<group>"; };
+		A9DBFE791FBAF06A00607B3B /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A9DBFE7B1FBAF07F00607B3B /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		B8B9968BBF27104D483D1EB9 /* Pods-RendezvousUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousUITests/Pods-RendezvousUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6FDCCECF75162CFCE7F20E8 /* Pods_Rendezvous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rendezvous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBF4066CDBD1521EF5A5BB4 /* Pods_RendezvousTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RendezvousTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9AB4FA01FB4674700BC9FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76549FB7117C36DC95C0C2A5 /* Pods_Rendezvous.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FB61FB4674700BC9FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C183D7AF49F91B05A236AA12 /* Pods_RendezvousTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FC11FB4674700BC9FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5D6655177BB19AE771BF96 /* Pods_RendezvousUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F03FB0E8A672A6779D81185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E495FE9499174E284B3B32 /* Pods-Rendezvous.debug.xcconfig */,
+				1FA5E579DCA0CCD3ECA7B2BA /* Pods-Rendezvous.release.xcconfig */,
+				4C450306C1C13E79D2312829 /* Pods-RendezvousTests.debug.xcconfig */,
+				436ED74E6511AC086E81E98A /* Pods-RendezvousTests.release.xcconfig */,
+				0EC5E3C901DAB44C393457E1 /* Pods-RendezvousUITests.debug.xcconfig */,
+				B8B9968BBF27104D483D1EB9 /* Pods-RendezvousUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BA3D7E54600F1F09FECD8E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6FDCCECF75162CFCE7F20E8 /* Pods_Rendezvous.framework */,
+				EDBF4066CDBD1521EF5A5BB4 /* Pods_RendezvousTests.framework */,
+				2247336B55F699F7CDC9D78E /* Pods_RendezvousUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98E7D711FB47A2F00644B6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7D741FB47A6400644B6F /* Event.swift */,
+				A9DBFE651FBA243000607B3B /* User.swift */,
+				A9DBFE771FBAEEDA00607B3B /* FriendsService.swift */,
+				A9DBFE791FBAF06A00607B3B /* LoginService.swift */,
+				A9DBFE7B1FBAF07F00607B3B /* ProfileService.swift */,
+				A92E6E251FD707B100E5630F /* Group.swift */,
+				A92E6E271FD70A2400E5630F /* EventService.swift */,
+				A92E6E291FD70AC000E5630F /* GroupsService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A98E7D721FB47A3900644B6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB4FAC1FB4674700BC9FCC /* Main.storyboard */,
+				A9DBFE751FBA8DC700607B3B /* FriendsTableViewCell.swift */,
+				A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A98E7D731FB47A4700644B6F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7D761FB47ADA00644B6F /* LoginViewController.swift */,
+				A9DBFE6B1FBA3CBE00607B3B /* HomeViewController.swift */,
+				A9DBFE6D1FBA3CD000607B3B /* EventsViewController.swift */,
+				A9DBFE6F1FBA3CDB00607B3B /* FriendsViewController.swift */,
+				A9DBFE711FBA3CEE00607B3B /* ProfileViewController.swift */,
+				A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */,
+				A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */,
+				A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */,
+				A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9AB4F9A1FB4674700BC9FCC = {
+			isa = PBXGroup;
+			children = (
+				A9855DB61FD6E91400252ABA /* MapKit.framework */,
+				A9AB4FA51FB4674700BC9FCC /* Rendezvous */,
+				A9AB4FBC1FB4674700BC9FCC /* RendezvousTests */,
+				A9AB4FC71FB4674700BC9FCC /* RendezvousUITests */,
+				A9AB4FA41FB4674700BC9FCC /* Products */,
+				0F03FB0E8A672A6779D81185 /* Pods */,
+				8BA3D7E54600F1F09FECD8E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9AB4FA41FB4674700BC9FCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB4FA31FB4674700BC9FCC /* Rendezvous.app */,
+				A9AB4FB91FB4674700BC9FCC /* RendezvousTests.xctest */,
+				A9AB4FC41FB4674700BC9FCC /* RendezvousUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9AB4FA51FB4674700BC9FCC /* Rendezvous */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7D731FB47A4700644B6F /* Controller */,
+				A98E7D721FB47A3900644B6F /* View */,
+				A98E7D711FB47A2F00644B6F /* Model */,
+				A9AB4FA61FB4674700BC9FCC /* AppDelegate.swift */,
+				A9AB4FAF1FB4674700BC9FCC /* Assets.xcassets */,
+				A9AB4FB11FB4674700BC9FCC /* LaunchScreen.storyboard */,
+				A9AB4FB41FB4674700BC9FCC /* Info.plist */,
+				A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */,
+			);
+			path = Rendezvous;
+			sourceTree = "<group>";
+		};
+		A9AB4FBC1FB4674700BC9FCC /* RendezvousTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB4FBD1FB4674700BC9FCC /* RendezvousTests.swift */,
+				A9AB4FBF1FB4674700BC9FCC /* Info.plist */,
+			);
+			path = RendezvousTests;
+			sourceTree = "<group>";
+		};
+		A9AB4FC71FB4674700BC9FCC /* RendezvousUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9AB4FC81FB4674700BC9FCC /* RendezvousUITests.swift */,
+				A9AB4FCA1FB4674700BC9FCC /* Info.plist */,
+			);
+			path = RendezvousUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9AB4FA21FB4674700BC9FCC /* Rendezvous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AB4FCD1FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "Rendezvous" */;
+			buildPhases = (
+				00C94C638C1481A658AA9363 /* [CP] Check Pods Manifest.lock */,
+				A9AB4F9F1FB4674700BC9FCC /* Sources */,
+				A9AB4FA01FB4674700BC9FCC /* Frameworks */,
+				A9AB4FA11FB4674700BC9FCC /* Resources */,
+				2C10FDFB24EF8169BADDB0B7 /* [CP] Embed Pods Frameworks */,
+				656CED4CC4C71484BF16E103 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rendezvous;
+			productName = Rendezvous;
+			productReference = A9AB4FA31FB4674700BC9FCC /* Rendezvous.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9AB4FB81FB4674700BC9FCC /* RendezvousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AB4FD01FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "RendezvousTests" */;
+			buildPhases = (
+				2D3F1AD305425DFDFD895A13 /* [CP] Check Pods Manifest.lock */,
+				A9AB4FB51FB4674700BC9FCC /* Sources */,
+				A9AB4FB61FB4674700BC9FCC /* Frameworks */,
+				A9AB4FB71FB4674700BC9FCC /* Resources */,
+				292EF8C9260850FB07771A10 /* [CP] Embed Pods Frameworks */,
+				0DE073D51DD3922AA209522F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9AB4FBB1FB4674700BC9FCC /* PBXTargetDependency */,
+			);
+			name = RendezvousTests;
+			productName = RendezvousTests;
+			productReference = A9AB4FB91FB4674700BC9FCC /* RendezvousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9AB4FC31FB4674700BC9FCC /* RendezvousUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AB4FD31FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "RendezvousUITests" */;
+			buildPhases = (
+				09504ACAD607BB008F953D1F /* [CP] Check Pods Manifest.lock */,
+				A9AB4FC01FB4674700BC9FCC /* Sources */,
+				A9AB4FC11FB4674700BC9FCC /* Frameworks */,
+				A9AB4FC21FB4674700BC9FCC /* Resources */,
+				F2CA6714F06B3707BB046050 /* [CP] Embed Pods Frameworks */,
+				D3DC5A05235F3C80B2CEC14D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9AB4FC61FB4674700BC9FCC /* PBXTargetDependency */,
+			);
+			name = RendezvousUITests;
+			productName = RendezvousUITests;
+			productReference = A9AB4FC41FB4674700BC9FCC /* RendezvousUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9AB4F9B1FB4674700BC9FCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Marco Valentino";
+				TargetAttributes = {
+					A9AB4FA21FB4674700BC9FCC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A9AB4FB81FB4674700BC9FCC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9AB4FA21FB4674700BC9FCC;
+					};
+					A9AB4FC31FB4674700BC9FCC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9AB4FA21FB4674700BC9FCC;
+					};
+				};
+			};
+			buildConfigurationList = A9AB4F9E1FB4674700BC9FCC /* Build configuration list for PBXProject "Rendezvous" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9AB4F9A1FB4674700BC9FCC;
+			productRefGroup = A9AB4FA41FB4674700BC9FCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9AB4FA21FB4674700BC9FCC /* Rendezvous */,
+				A9AB4FB81FB4674700BC9FCC /* RendezvousTests */,
+				A9AB4FC31FB4674700BC9FCC /* RendezvousUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9AB4FA11FB4674700BC9FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AB4FB31FB4674700BC9FCC /* LaunchScreen.storyboard in Resources */,
+				A98E7D791FB47BD800644B6F /* GoogleService-Info.plist in Resources */,
+				A9AB4FB01FB4674700BC9FCC /* Assets.xcassets in Resources */,
+				A9AB4FAE1FB4674700BC9FCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FB71FB4674700BC9FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FC21FB4674700BC9FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C94C638C1481A658AA9363 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rendezvous-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09504ACAD607BB008F953D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RendezvousUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DE073D51DD3922AA209522F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		292EF8C9260850FB07771A10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-Defines-NSData+zlib/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C10FDFB24EF8169BADDB0B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-f0850809/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D3F1AD305425DFDFD895A13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RendezvousTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		656CED4CC4C71484BF16E103 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3DC5A05235F3C80B2CEC14D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendezvousUITests/Pods-RendezvousUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2CA6714F06B3707BB046050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RendezvousUITests/Pods-RendezvousUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9AB4F9F1FB4674700BC9FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DBFE761FBA8DC700607B3B /* FriendsTableViewCell.swift in Sources */,
+				A98E7D751FB47A6400644B6F /* Event.swift in Sources */,
+				A92E6E281FD70A2400E5630F /* EventService.swift in Sources */,
+				A9DBFE701FBA3CDB00607B3B /* FriendsViewController.swift in Sources */,
+				A92E6E261FD707B100E5630F /* Group.swift in Sources */,
+				A9DBFE721FBA3CEE00607B3B /* ProfileViewController.swift in Sources */,
+				A9DBFE6E1FBA3CD000607B3B /* EventsViewController.swift in Sources */,
+				A9855DB81FD6EE1D00252ABA /* AddFriendsViewController.swift in Sources */,
+				A92E6E201FD6F18B00E5630F /* AddEventTableViewController.swift in Sources */,
+				A9DBFE7C1FBAF07F00607B3B /* ProfileService.swift in Sources */,
+				A92E6E2C1FD70BFD00E5630F /* AddGroupTableViewController.swift in Sources */,
+				A9DBFE661FBA243000607B3B /* User.swift in Sources */,
+				A92E6E221FD6F43200E5630F /* AddFriendsTableViewCell.swift in Sources */,
+				A92E6E2E1FD71CFE00E5630F /* SelectLocationViewController.swift in Sources */,
+				A9DBFE7A1FBAF06A00607B3B /* LoginService.swift in Sources */,
+				A92E6E2A1FD70AC000E5630F /* GroupsService.swift in Sources */,
+				A9AB4FA71FB4674700BC9FCC /* AppDelegate.swift in Sources */,
+				A9DBFE781FBAEEDA00607B3B /* FriendsService.swift in Sources */,
+				A98E7D771FB47ADA00644B6F /* LoginViewController.swift in Sources */,
+				A9DBFE6C1FBA3CBE00607B3B /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FB51FB4674700BC9FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AB4FBE1FB4674700BC9FCC /* RendezvousTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AB4FC01FB4674700BC9FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AB4FC91FB4674700BC9FCC /* RendezvousUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9AB4FBB1FB4674700BC9FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9AB4FA21FB4674700BC9FCC /* Rendezvous */;
+			targetProxy = A9AB4FBA1FB4674700BC9FCC /* PBXContainerItemProxy */;
+		};
+		A9AB4FC61FB4674700BC9FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9AB4FA21FB4674700BC9FCC /* Rendezvous */;
+			targetProxy = A9AB4FC51FB4674700BC9FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9AB4FAC1FB4674700BC9FCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AB4FAD1FB4674700BC9FCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9AB4FB11FB4674700BC9FCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AB4FB21FB4674700BC9FCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9AB4FCB1FB4674700BC9FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9AB4FCC1FB4674700BC9FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9AB4FCE1FB4674700BC9FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E495FE9499174E284B3B32 /* Pods-Rendezvous.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Rendezvous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.Rendezvous;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9AB4FCF1FB4674700BC9FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA5E579DCA0CCD3ECA7B2BA /* Pods-Rendezvous.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Rendezvous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.Rendezvous;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9AB4FD11FB4674700BC9FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C450306C1C13E79D2312829 /* Pods-RendezvousTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RendezvousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.RendezvousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rendezvous.app/Rendezvous";
+			};
+			name = Debug;
+		};
+		A9AB4FD21FB4674700BC9FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 436ED74E6511AC086E81E98A /* Pods-RendezvousTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RendezvousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.RendezvousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rendezvous.app/Rendezvous";
+			};
+			name = Release;
+		};
+		A9AB4FD41FB4674700BC9FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC5E3C901DAB44C393457E1 /* Pods-RendezvousUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RendezvousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.RendezvousUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rendezvous;
+			};
+			name = Debug;
+		};
+		A9AB4FD51FB4674700BC9FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B9968BBF27104D483D1EB9 /* Pods-RendezvousUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RendezvousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = valentino.RendezvousUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rendezvous;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9AB4F9E1FB4674700BC9FCC /* Build configuration list for PBXProject "Rendezvous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AB4FCB1FB4674700BC9FCC /* Debug */,
+				A9AB4FCC1FB4674700BC9FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AB4FCD1FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "Rendezvous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AB4FCE1FB4674700BC9FCC /* Debug */,
+				A9AB4FCF1FB4674700BC9FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AB4FD01FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "RendezvousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AB4FD11FB4674700BC9FCC /* Debug */,
+				A9AB4FD21FB4674700BC9FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AB4FD31FB4674700BC9FCC /* Build configuration list for PBXNativeTarget "RendezvousUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AB4FD41FB4674700BC9FCC /* Debug */,
+				A9AB4FD51FB4674700BC9FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9AB4F9B1FB4674700BC9FCC /* Project object */;
+}
