@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>642809326667-f5bigo0ake487qup10g7ta25kpbthaif.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.642809326667-f5bigo0ake487qup10g7ta25kpbthaif</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAd3m2SsvQXa0bDXkipyhRBq0YDvdQytrw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>642809326667</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>valentino.Rendezvous</string>
+	<key>PROJECT_ID</key>
+	<string>valentino-rendezvous</string>
+	<key>STORAGE_BUCKET</key>
+	<string>valentino-rendezvous.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:642809326667:ios:aaff49fae2ddff7b</string>
+	<key>DATABASE_URL</key>
+	<string>https://valentino-rendezvous.firebaseio.com</string>
+</dict>
+</plist>

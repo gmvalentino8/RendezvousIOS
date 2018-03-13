@@ -12,13 +12,25 @@ import FBSDKLoginKit
 import FirebaseDatabase
 
 class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UISearchBarDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var friendsList = [User]() { didSet{ self.tableView.reloadData() }}
-    var searchList = [User]() { didSet{ self.tableView.reloadData() }}
-    var searching = false { didSet{ self.tableView.reloadData() }}
+    var friendsList = [User]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var searchList = [User]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var searching = false {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +39,7 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
             self.friendsList = result
         }
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching {
             return searchList.count
@@ -78,6 +90,7 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
         if searchBar.text == nil || searchBar.text == "" {
             searching = false
             view.endEditing(true)
+            searchList.removeAll()
         } else {
             searching = true
             searchList = friendsList.filter({($0.firstName + " " + $0.lastName).lowercased()

@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import GooglePlaces
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,12 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (FBSDKAccessToken.current() != nil) {
             ProfileService.shared.saveUserInfo()
             FriendsService.shared.saveFriendsList()
-            print("HERE")
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBarView")
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }
+        GMSPlacesClient.provideAPIKey("AIzaSyAd3m2SsvQXa0bDXkipyhRBq0YDvdQytrw")
+        GMSServices.provideAPIKey("AIzaSyAd3m2SsvQXa0bDXkipyhRBq0YDvdQytrw")
         return true
     }
     

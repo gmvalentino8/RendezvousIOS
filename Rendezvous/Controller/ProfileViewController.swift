@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Load the user info
         if user == nil {
             ProfileService.shared.loadUserInfo(completion: { response in
                 self.user = response
@@ -34,16 +35,17 @@ class ProfileViewController: UIViewController {
             saveButton.isHidden = true
             logoutButton.isHidden = true
         }
-        // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func editAndSave(_ sender: UIButton) {
+        // Save the updated information
         if saveButton.titleLabel?.text == "Save" {
             saveButton.setTitle("Edit", for: .normal)
             self.phoneNumberTextField.isUserInteractionEnabled = false
             self.WhatsappTextField.isUserInteractionEnabled = false
             ProfileService.shared.saveUserContactInfo(phone: phoneNumberTextField.text, whatsapp: WhatsappTextField.text)
         } else {
+            // Change the button to edit
             saveButton.setTitle("Save", for: .normal)
             self.phoneNumberTextField.isUserInteractionEnabled = true
             self.WhatsappTextField.isUserInteractionEnabled = true
@@ -51,6 +53,7 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    /** Function to load the data from a user object **/
     func loadDataFromUser(_ user: User) {
         self.nameTextField.text = user.firstName + " " + user.lastName
         self.emailTextField.text = user.email
@@ -74,9 +77,5 @@ class ProfileViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "LoginView")
         self.present(viewController, animated: true, completion: nil)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }

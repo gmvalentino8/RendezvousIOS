@@ -15,7 +15,7 @@ class LoginService {
     private init() {}
     // Reference to the database
     lazy var ref: DatabaseReference = Database.database().reference()
-
+    
     /** Function to log the user into Facebook and Firebase */
     func login(viewController: UIViewController, callback: @escaping (Bool) -> Void) {
         // Use the Facebook login manager to login

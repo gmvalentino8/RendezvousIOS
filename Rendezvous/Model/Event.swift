@@ -25,10 +25,10 @@ struct Event {
         return ["name": name!,
             "description": description!,
             "location": location!,
-            "longitude": longitude!,
-            "latitude": latitude!,
+            "startDate": startDate!.timeIntervalSince1970,
+            "endDate": endDate!.timeIntervalSince1970,
             "privacy": privacy!,
-            "users": users]
+            "users": users as Any]
     }
     
     init(name: String, description: String, location: String, longitude: Double, latitude: Double, privacy: Bool, startDate: Date, endDate: Date, users: [String: String]?) {
@@ -44,15 +44,17 @@ struct Event {
     }
     
     init?(JSON: [String:Any], id: String) {
-        self.id = JSON["id"] as? String
+        self.id = id
         self.name = JSON["name"] as? String
         self.description = JSON["description"] as? String
         self.location = JSON["location"] as? String
         self.longitude = JSON["longitude"] as? Double
         self.latitude = JSON["latitude"] as? Double
         self.privacy = JSON["privacy"] as? Bool
-        self.startDate = JSON["startDate"] as? Date
-        self.endDate = JSON["endDate"] as? Date
+        let startDateInterval = JSON["startDate"] as? TimeInterval
+        self.startDate = Date(timeIntervalSince1970: startDateInterval!)
+        let endDateInterval = JSON["endDate"] as? TimeInterval
+        self.endDate = Date(timeIntervalSince1970: endDateInterval!)
         self.users = JSON["users"] as? [String: String]
     }
     

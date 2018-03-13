@@ -14,7 +14,7 @@ class ProfileService {
     static let shared = ProfileService()
     private init() {}
     lazy var ref: DatabaseReference = Database.database().reference()
-
+    
     /** Function to save a user's info */
     func saveUserInfo() {
         // Make a Facebook Graph Request
@@ -34,14 +34,14 @@ class ProfileService {
             ]
             // Get the user's Facebook id
             // Save the data into the database
-            self.ref.child("users").child(userID).updateChildValues(user)
+            self.ref.child("users").child(userID).updateChildValues(user as Any as! [AnyHashable : Any])
         }
     }
     
     func saveUserContactInfo(phone: String?, whatsapp: String?) {
         let userID = FBSDKAccessToken.current().userID!
         let update = ["phone": phone, "whatsapp": whatsapp]
-        ref.child("users").child(userID).updateChildValues(update)
+        ref.child("users").child(userID).updateChildValues(update as Any as! [AnyHashable : Any])
     }
     
     func loadUserInfo(completion: @escaping (User) -> Void) {

@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E297D20552D0A00FBE5C8 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E297C20552D0A00FBE5C8 /* FriendCollectionViewCell.swift */; };
+		04DEAEEF204FD5AA0024A06E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DEAEEE204FD5A90024A06E /* GoogleService-Info.plist */; };
 		6A5D6655177BB19AE771BF96 /* Pods_RendezvousUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2247336B55F699F7CDC9D78E /* Pods_RendezvousUITests.framework */; };
 		76549FB7117C36DC95C0C2A5 /* Pods_Rendezvous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FDCCECF75162CFCE7F20E8 /* Pods_Rendezvous.framework */; };
 		A92E6E201FD6F18B00E5630F /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */; };
 		A92E6E221FD6F43200E5630F /* AddFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */; };
-		A92E6E261FD707B100E5630F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E251FD707B100E5630F /* Group.swift */; };
 		A92E6E281FD70A2400E5630F /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E271FD70A2400E5630F /* EventService.swift */; };
-		A92E6E2A1FD70AC000E5630F /* GroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E291FD70AC000E5630F /* GroupsService.swift */; };
-		A92E6E2C1FD70BFD00E5630F /* AddGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */; };
-		A92E6E2E1FD71CFE00E5630F /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */; };
+		A94860B91FDFB602005930E6 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94860B81FDFB602005930E6 /* EventTableViewCell.swift */; };
+		A94860BB1FDFD59E005930E6 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94860BA1FDFD59E005930E6 /* EventDetailsViewController.swift */; };
 		A9855DB81FD6EE1D00252ABA /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */; };
 		A98E7D751FB47A6400644B6F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D741FB47A6400644B6F /* Event.swift */; };
 		A98E7D771FB47ADA00644B6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D761FB47ADA00644B6F /* LoginViewController.swift */; };
-		A98E7D791FB47BD800644B6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */; };
 		A9AB4FA71FB4674700BC9FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AB4FA61FB4674700BC9FCC /* AppDelegate.swift */; };
 		A9AB4FAE1FB4674700BC9FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AB4FAC1FB4674700BC9FCC /* Main.storyboard */; };
 		A9AB4FB01FB4674700BC9FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AB4FAF1FB4674700BC9FCC /* Assets.xcassets */; };
@@ -56,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041E297C20552D0A00FBE5C8 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		04DEAEEE204FD5A90024A06E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EC5E3C901DAB44C393457E1 /* Pods-RendezvousUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousUITests/Pods-RendezvousUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1FA5E579DCA0CCD3ECA7B2BA /* Pods-Rendezvous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rendezvous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous.release.xcconfig"; sourceTree = "<group>"; };
 		2247336B55F699F7CDC9D78E /* Pods_RendezvousUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RendezvousUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,16 +65,12 @@
 		4C450306C1C13E79D2312829 /* Pods-RendezvousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RendezvousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RendezvousTests/Pods-RendezvousTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
 		A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsTableViewCell.swift; sourceTree = "<group>"; };
-		A92E6E251FD707B100E5630F /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A92E6E271FD70A2400E5630F /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
-		A92E6E291FD70AC000E5630F /* GroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsService.swift; sourceTree = "<group>"; };
-		A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupTableViewController.swift; sourceTree = "<group>"; };
-		A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
-		A9855DB61FD6E91400252ABA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A94860B81FDFB602005930E6 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		A94860BA1FDFD59E005930E6 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
 		A98E7D741FB47A6400644B6F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A98E7D761FB47ADA00644B6F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9AB4FA31FB4674700BC9FCC /* Rendezvous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rendezvous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AB4FA61FB4674700BC9FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AB4FAD1FB4674700BC9FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,9 +156,7 @@
 				A9DBFE771FBAEEDA00607B3B /* FriendsService.swift */,
 				A9DBFE791FBAF06A00607B3B /* LoginService.swift */,
 				A9DBFE7B1FBAF07F00607B3B /* ProfileService.swift */,
-				A92E6E251FD707B100E5630F /* Group.swift */,
 				A92E6E271FD70A2400E5630F /* EventService.swift */,
-				A92E6E291FD70AC000E5630F /* GroupsService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +167,8 @@
 				A9AB4FAC1FB4674700BC9FCC /* Main.storyboard */,
 				A9DBFE751FBA8DC700607B3B /* FriendsTableViewCell.swift */,
 				A92E6E211FD6F43200E5630F /* AddFriendsTableViewCell.swift */,
+				A94860B81FDFB602005930E6 /* EventTableViewCell.swift */,
+				041E297C20552D0A00FBE5C8 /* FriendCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,8 +183,7 @@
 				A9DBFE711FBA3CEE00607B3B /* ProfileViewController.swift */,
 				A9855DB71FD6EE1D00252ABA /* AddFriendsViewController.swift */,
 				A92E6E1F1FD6F18B00E5630F /* AddEventTableViewController.swift */,
-				A92E6E2B1FD70BFD00E5630F /* AddGroupTableViewController.swift */,
-				A92E6E2D1FD71CFE00E5630F /* SelectLocationViewController.swift */,
+				A94860BA1FDFD59E005930E6 /* EventDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,7 +191,6 @@
 		A9AB4F9A1FB4674700BC9FCC = {
 			isa = PBXGroup;
 			children = (
-				A9855DB61FD6E91400252ABA /* MapKit.framework */,
 				A9AB4FA51FB4674700BC9FCC /* Rendezvous */,
 				A9AB4FBC1FB4674700BC9FCC /* RendezvousTests */,
 				A9AB4FC71FB4674700BC9FCC /* RendezvousUITests */,
@@ -218,6 +213,7 @@
 		A9AB4FA51FB4674700BC9FCC /* Rendezvous */ = {
 			isa = PBXGroup;
 			children = (
+				04DEAEEE204FD5A90024A06E /* GoogleService-Info.plist */,
 				A98E7D731FB47A4700644B6F /* Controller */,
 				A98E7D721FB47A3900644B6F /* View */,
 				A98E7D711FB47A2F00644B6F /* Model */,
@@ -225,7 +221,6 @@
 				A9AB4FAF1FB4674700BC9FCC /* Assets.xcassets */,
 				A9AB4FB11FB4674700BC9FCC /* LaunchScreen.storyboard */,
 				A9AB4FB41FB4674700BC9FCC /* Info.plist */,
-				A98E7D781FB47BD800644B6F /* GoogleService-Info.plist */,
 			);
 			path = Rendezvous;
 			sourceTree = "<group>";
@@ -365,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AB4FB31FB4674700BC9FCC /* LaunchScreen.storyboard in Resources */,
-				A98E7D791FB47BD800644B6F /* GoogleService-Info.plist in Resources */,
+				04DEAEEF204FD5AA0024A06E /* GoogleService-Info.plist in Resources */,
 				A9AB4FB01FB4674700BC9FCC /* Assets.xcassets in Resources */,
 				A9AB4FAE1FB4674700BC9FCC /* Main.storyboard in Resources */,
 			);
@@ -517,9 +512,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rendezvous/Pods-Rendezvous-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -565,23 +567,22 @@
 			files = (
 				A9DBFE761FBA8DC700607B3B /* FriendsTableViewCell.swift in Sources */,
 				A98E7D751FB47A6400644B6F /* Event.swift in Sources */,
+				041E297D20552D0A00FBE5C8 /* FriendCollectionViewCell.swift in Sources */,
 				A92E6E281FD70A2400E5630F /* EventService.swift in Sources */,
 				A9DBFE701FBA3CDB00607B3B /* FriendsViewController.swift in Sources */,
-				A92E6E261FD707B100E5630F /* Group.swift in Sources */,
 				A9DBFE721FBA3CEE00607B3B /* ProfileViewController.swift in Sources */,
 				A9DBFE6E1FBA3CD000607B3B /* EventsViewController.swift in Sources */,
 				A9855DB81FD6EE1D00252ABA /* AddFriendsViewController.swift in Sources */,
 				A92E6E201FD6F18B00E5630F /* AddEventTableViewController.swift in Sources */,
 				A9DBFE7C1FBAF07F00607B3B /* ProfileService.swift in Sources */,
-				A92E6E2C1FD70BFD00E5630F /* AddGroupTableViewController.swift in Sources */,
 				A9DBFE661FBA243000607B3B /* User.swift in Sources */,
 				A92E6E221FD6F43200E5630F /* AddFriendsTableViewCell.swift in Sources */,
-				A92E6E2E1FD71CFE00E5630F /* SelectLocationViewController.swift in Sources */,
 				A9DBFE7A1FBAF06A00607B3B /* LoginService.swift in Sources */,
-				A92E6E2A1FD70AC000E5630F /* GroupsService.swift in Sources */,
 				A9AB4FA71FB4674700BC9FCC /* AppDelegate.swift in Sources */,
 				A9DBFE781FBAEEDA00607B3B /* FriendsService.swift in Sources */,
+				A94860B91FDFB602005930E6 /* EventTableViewCell.swift in Sources */,
 				A98E7D771FB47ADA00644B6F /* LoginViewController.swift in Sources */,
+				A94860BB1FDFD59E005930E6 /* EventDetailsViewController.swift in Sources */,
 				A9DBFE6C1FBA3CBE00607B3B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ class RendezvousTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-         ref = Database.database().reference()
+        ref = Database.database().reference()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -31,8 +31,6 @@ class RendezvousTests: XCTestCase {
             let list = response
             XCTAssertEqual(list[0].firstName, "Marco")
         }
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testGetFriendsFromIDList() {
@@ -61,6 +59,95 @@ class RendezvousTests: XCTestCase {
     func testLoadUserInfo() {
         ProfileService.shared.loadUserInfo() { response in
             XCTAssertEqual(response.firstName, "Marco")
+        }
+    }
+    
+    func testCreateEvent() {
+        let event = Event(name: "Test", description: "Test", location: "Test", longitude: 0, latitude: 0, privacy: false, startDate: Date(), endDate: Date(), users: [FBSDKAccessToken.current().userID: "Hosting"])
+        var count = 0
+        EventsService.shared.getFilterdEvents(filter: "Hosting") { (result) in
+            count = result.count
+        }
+        EventsService.shared.createEvent(event: event)
+        EventsService.shared.getFilterdEvents(filter: "Hosting") { (result) in
+            XCTAssertEqual(count + 1, result.count)
+            var nameList = [String]()
+            for item in result {
+                nameList.append(item.name!)
+            }
+            XCTAssert(nameList.contains("Test"))
+        }
+    }
+    
+    func testCreateGroup() {
+        let group = Group(name: "Test", users: [FBSDKAccessToken.current().userID])
+        var count = 0
+        GroupsService.shared.getGroups() { (result) in
+            count = result.count
+        }
+        GroupsService.shared.createGroup(group: group)
+        GroupsService.shared.getGroups() { (result) in
+            XCTAssertEqual(count + 1, result.count)
+            var nameList = [String]()
+            for item in result {
+                nameList.append(item.name!)
+            }
+            XCTAssert(nameList.contains("Test"))
+        }
+    }
+    
+    func testSetEventGoing() {
+        let event = Event(name: "Test", description: "Test", location: "Test", longitude: 0, latitude: 0, privacy: false, startDate: Date(), endDate: Date(), users: [FBSDKAccessToken.current().userID: "Invited"])
+        var eventID = ""
+        EventsService.shared.getFilterdEvents(filter: "Invited") { (result) in
+            for item in result {
+                if (item.name == "Test") {
+                    eventID = item.id!
+                }
+            }
+        }
+        EventsService.shared.setGoing(eventID: eventID)
+        EventsService.shared.getFilterdEvents(filter: "Going") { (result) in
+            var nameList = [String]()
+            for item in result {
+                nameList.append(item.name!)
+            }
+            XCTAssert(nameList.contains("Test"))
+        }
+    }
+    
+    func testSetEventDecline() {
+        let event = Event(name: "Test", description: "Test", location: "Test", longitude: 0, latitude: 0, privacy: false, startDate: Date(), endDate: Date(), users: [FBSDKAccessToken.current().userID: "Invited"])
+        var count = 0
+        var eventID = ""
+        EventsService.shared.getFilterdEvents(filter: "Invited") { (result) in
+            count = result.count
+            for item in result {
+                if (item.name == "Test") {
+                    eventID = item.id!
+                }
+            }
+        }
+        EventsService.shared.setDecline(eventID: eventID)
+        EventsService.shared.getFilterdEvents(filter: "Invited") { (result) in
+            XCTAssertEqual(count + 1, result.count)
+            var nameList = [String]()
+            for item in result {
+                nameList.append(item.name!)
+            }
+            XCTAssert(!nameList.contains("Test"))
+        }
+    }
+    
+    func testGetFilteredEvents() {
+        EventsService.shared.getFilterdEvents(filter: "Going") { (result) in
+            XCTAssertEqual(6, result.count)
+        }
+    }
+    
+    func testPublicEvents() {
+        EventsService.shared.getPublicEvents() { (result) in
+            XCTAssertEqual(8, result.count)
         }
     }
     

@@ -12,18 +12,35 @@ protocol AddedFriendsProtocol {
     func addFriendsResult(value: [User])
 }
 
-class AddFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UISearchBarDelegate, UINavigationControllerDelegate {
+class AddFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UISearchBarDelegate, UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var friendCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     var delegate: AddedFriendsProtocol?
     
     // Set up empty lists to hold different data
-    var addedList = Set<User>()
-    var friendsList = [User]() { didSet{ self.tableView.reloadData() }}
-    var searchList = [User]() { didSet{ self.tableView.reloadData() }}
-    var searching = false { didSet{ self.tableView.reloadData() }}
+    var addedList = NSMutableOrderedSet() {
+        didSet {
+            self.friendCollectionView.reloadData()
+        }
+    }
+    var friendsList = [User]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var searchList = [User]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var searching = false {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +49,24 @@ class AddFriendsViewController: UIViewController, UITableViewDelegate, UITableVi
             self.friendsList = result
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.addedList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = self.friendCollectionView.dequeueReusableCell(withReuseIdentifier: "FriendImageCell", for: indexPath) as! FriendCollectionViewCell
+        let friend = self.addedList[indexPath.row] as! User
+        // Get the image from picture url
+        let url = URL(string: friend.picture)
+        cell.friendImage.sd_setImage(with: url)
+        cell.friendImage.layer.cornerRadius = 15
+        cell.friendImage.layer.masksToBounds = true
+        cell.friendImage.layer.borderWidth = 1
+        cell.friendImage.layer.borderColor = UIColor.black.cgColor
+        return cell
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the count of the relative list
@@ -81,17 +116,19 @@ class AddFriendsViewController: UIViewController, UITableViewDelegate, UITableVi
             // If the friend is already added, remove the friend
             if addedList.contains(friend) {
                 self.addedList.remove(friend)
+                self.friendCollectionView.reloadData()
                 cell.statusLabel.text = "+"
             } else {
                 // If the friend not yet added, add the friend
-                self.addedList.insert(friend)
+                self.addedList.add(friend)
+                self.friendCollectionView.reloadData()
                 cell.statusLabel.text = "✔︎"
             }
         }
     }
     
     @IBAction func addSelectedOnClick(_ sender: UIButton) {
-        delegate?.addFriendsResult(value: Array(addedList))
+        delegate?.addFriendsResult(value: addedList.array as! [User])
         self.navigationController?.popViewController(animated: true)
     }
     

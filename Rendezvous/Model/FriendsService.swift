@@ -15,7 +15,7 @@ class FriendsService {
     private init() {}
     // Reference to the database
     lazy var ref: DatabaseReference = Database.database().reference()
-
+    
     /** Function to get the user's friend list */
     func saveFriendsList() {
         // Make a Facebook Graph Request
